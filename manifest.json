@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Lemonade Prompt Timer",
+  "version": "2.1.0",
+  "description": "Per-prompt time and credit usage for lemonade.gg, one-click copy of prompt details, a hide/show game map toggle, and a feedback-message builder.",
+  "permissions": ["storage", "unlimitedStorage"],
+  "host_permissions": ["https://lemonade.gg/*", "https://*.lemonade.gg/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://lemonade.gg/*", "https://*.lemonade.gg/*"],
+      "js": ["content.js"],
+      "css": ["page.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

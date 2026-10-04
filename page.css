@@ -1,0 +1,11 @@
+/* Applied to the Lemonade page itself when the game map is hidden */
+[data-chat-workspace="true"].lqa-map-hidden {
+  --chat-sidebar-width: 100% !important;
+}
+[data-chat-workspace="true"].lqa-map-hidden > div:not([role="complementary"]) {
+  display: none !important;
+}
+[data-chat-workspace="true"].lqa-map-hidden > [role="complementary"] {
+  border-left: none !important;
+  box-shadow: none !important;
+}
